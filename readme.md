@@ -12,6 +12,19 @@ Fork this repository, then clone your fork, and run this in your newly created d
 
 ```sh
 composer install
+```
+
+Next you need to make a copy of the `.env.example` file and rename it to `.env` inside your project root.
+
+Run the following command to generate your app key:
+
+```
+php artisan key:generate
+```
+
+Then start your server:
+
+```
 php artisan serve
 ```
 
