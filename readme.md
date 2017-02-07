@@ -28,7 +28,7 @@ Then start your server:
 php artisan serve
 ```
 
-Your Laravel starter project is now up and running! However, by default, it will display some documentation to help you getting started with your Laravel project.
+Your Laravel starter project is now up and running! 
 
 #### Configure the starter project
 
@@ -40,9 +40,17 @@ Edit the `config/prismic.php` prismic configuration file to get the application 
 
 You may have to restart your server.
 
-#### Deploy your Laravel application
+#### Create your routes and pages
 
-An easy way to deploy your Laravel application is to use [Heroku](http://www.heroku.com). Just follow these few simple steps once you have successfully [signed up](https://id.heroku.com/signup/www-header) and [installed the Heroku toolbelt](https://toolbelt.heroku.com/):
+When the project is first launched and viewed, it will by default display a help page. Here you will find some documentation to help you get started with your Laravel project.
+
+It includes an example that shows how to create a route and query a document of the custom type "page". It then shows how to integrate the content into the Laravel templates. 
+
+Check it out to get a better understanding of how you would create your own routes and templates for your project. You can also explore our documentation to learn more about how to [query the API](https://prismic.io/docs/how-to-query-the-api#?lang=php) and how to integrate content fields like [Rich Text](https://prismic.io/docs/fields/structuredtext#integrate?lang=php), [Images](https://prismic.io/docs/fields/image#integrate?lang=php), and more.
+
+### Deploying your Laravel application
+
+Once you've created your website, an easy way to deploy your Laravel application is to use [Heroku](http://www.heroku.com). Just follow these few simple steps once you have successfully [signed up](https://id.heroku.com/signup/www-header) and [installed the Heroku toolbelt](https://toolbelt.heroku.com/):
 
 Create a new Heroku application
 
@@ -84,9 +92,9 @@ $ heroku open
 
 You can read more about launching your project with Heroku here in their [Laravel & Heroku guide](https://devcenter.heroku.com/articles/getting-started-with-laravel).
 
-#### Get started with prismic.io
+### Learn more about prismic.io
 
-You can find out [how to get started with prismic.io](https://prismic.io/quickstart#?lang=php) and learn more by exploring [our full documentation](https://prismic.io/docs#?lang=php).
+If you are looking for more resources to learn more about prismic.io, you can find out [how to get started with prismic.io](https://prismic.io/quickstart#?lang=php) and learn more by exploring [our full documentation](https://prismic.io/docs#?lang=php).
 
 #### Understand the PHP development kit
 
