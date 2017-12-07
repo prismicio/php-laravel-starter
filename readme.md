@@ -46,7 +46,7 @@ When the project is first launched and viewed, it will by default display a help
 
 It includes an example that shows how to create a route and query a document of the custom type "page". It then shows how to integrate the content into the Laravel templates. 
 
-Check it out to get a better understanding of how you would create your own routes and templates for your project. You can also explore our documentation to learn more about how to [query the API](https://prismic.io/docs/how-to-query-the-api#?lang=php) and how to integrate content fields like [Rich Text](https://prismic.io/docs/fields/structuredtext#integrate?lang=php), [Images](https://prismic.io/docs/fields/image#integrate?lang=php), and more.
+Check it out to get a better understanding of how you would create your own routes and templates for your project. You can also explore our documentation to learn more about how to [query the API](https://prismic.io/docs/php/query-the-api/how-to-query-the-api) and how to integrate content fields like [Rich Text](https://prismic.io/docs/php/templating/rich-text), [Images](https://prismic.io/docs/php/templating/image), and more.
 
 ### Deploying your Laravel application
 
@@ -98,13 +98,13 @@ If you are looking for more resources to learn more about prismic.io, you can fi
 
 #### Understand the PHP development kit
 
-You'll find more information about how to use the development kit included in this starter project, by reading [its README file](https://github.com/prismicio/php-kit/blob/master/README.md) and exploring [its project files](https://github.com/prismicio/php-kit).
+You'll find more information about how to use the development kit included in this starter project, by reading [its README file](https://github.com/prismicio/php-kit/blob/master/README.md) and exploring [its project files](https://prismic.io/docs/php/getting-started/with-the-php-starter-kit).
 
 ### Licence
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2013 Zengularity (http://www.zengularity.com).
+Copyright 2017 Prismic.io (https://prismic.io).
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
