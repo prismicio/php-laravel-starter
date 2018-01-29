@@ -55,7 +55,7 @@
         <h4>Create a prismic.io content repository</h4>
         <p>A repository is where your website’s content will live. Simply <a href="https://prismic.io/#create" target="_blank">create one</a> choosing a repository name and a plan. We’ve got a variety of plans including our favorite, Free!</p>
         <h4>Configure your project</h4>
-        <p>Open the prismic.php configuration file and assign the API endpoint for your prismic.io repository:</p>
+        <p>Open the prismic.php configuration file (located at config/prismic.php) and assign the API endpoint for your prismic.io repository:</p>
         <div class="source-code">
             <pre><code>// In config/prismic.php
 'url' => 'https://your-repo-name.prismic.io/api/v2',
@@ -126,7 +126,7 @@ Route::get('/page/{uid}', function ($uid, Request $request) {
 </code></pre>
         </div>
         <h4>Create webpage with the retrieving content</h4>
-        <p>Now all that's left to be done is to output on a webpage the content we fetched from the API. Create a new template file named "page.blade.php" inside the views folder. Here's an example that'll display a webpage "Page" with its title, description and image:</p>
+        <p>Now all that's left to be done is to output on a webpage the content we fetched from the API. Create a new template file named "page.blade.php" inside the views folder (located at resources/views/page.blade.php). Here's an example that'll display a webpage "Page" with its title, description and image:</p>
         <div class="source-code">
             <pre><code>// Create file resources/views/page.blade.php
 
