@@ -94,11 +94,11 @@ You can read more about launching your project with Heroku here in their [Larave
 
 ## Learn more about prismic.io
 
-If you are looking for more resources to learn more about prismic.io, you can find out [how to get started with prismic.io](https://prismic.io/quickstart#?lang=php) and learn more by exploring [our full documentation](https://prismic.io/docs#?lang=php).
+If you are looking for more resources to learn more about prismic.io, you can find out [how to get started with prismic.io](https://prismic.io/quickstart#?lang=php) and learn more by exploring [our full documentation](https://prismic.io/docs/php/getting-started/with-the-php-starter-kit).
 
 ### Understand the PHP development kit
 
-You'll find more information about how to use the development kit included in this starter project, by reading [its README file](https://github.com/prismicio/php-kit/blob/master/README.md) and exploring [its project files](https://prismic.io/docs/php/getting-started/with-the-php-starter-kit).
+You'll find more information about how to use the development kit included in this starter project, by reading its README file and exploring its project files on GitHub [prismic/php-kit](https://github.com/prismicio/php-kit).
 
 ## Licence
 
