@@ -130,9 +130,9 @@ Route::get('/page/{uid}', function ($uid, Request $request) {
         <div class="source-code">
             <pre><code>// Create file resources/views/page.blade.php
 
-&lt;?php
-use Prismic\Dom\RichText;
-?&gt;
+@@php
+    use Prismic\Dom\RichText;
+@@endphp
 
 @@extends('layouts.app')
 
