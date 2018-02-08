@@ -11,8 +11,8 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.json]
+[{*.json,*.lock}]
 indent_size = 2
 
-[composer.json]
+[{composer.json,composer.lock}]
 indent_size = 4

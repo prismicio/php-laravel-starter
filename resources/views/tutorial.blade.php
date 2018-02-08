@@ -48,7 +48,7 @@
     </header>
 
     <section>
-        <p>This is a tutorial page included in this Laravel Starter project, it has a few useful links and example snippets to help you get started. You can access this page at <a href="{!! Request::url() !!}">{!! Request::url() !!}</a>.</p>
+        <p>This is a tutorial page included in this Laravel Starter project, it has a few useful links and example snippets to help you get started. You can access this page at <a href="{{ Request::url() }}">{{ Request::url() }}</a>.</p>
         <h2>Follow these steps:</h2>
 
         <h3 id="bootstrap"><span>1</span>Bootstrap your project</h3>
@@ -139,17 +139,17 @@ use Prismic\Dom\RichText;
 @@section('content')
 
     &lt;div&gt;
-        &lt;h1&gt;@{!! RichText::asText($document-&gt;data-&gt;title) !!}&lt;/h1&gt;
+        &lt;h1&gt;@{{ RichText::asText($document-&gt;data-&gt;title) }}&lt;/h1&gt;
         &lt;div&gt;
             @{!! RichText::asHtml($document-&gt;data-&gt;description) !!}
         &lt;/div&gt;
-        &lt;img src="@{!! $document-&gt;data-&gt;image-&gt;url !!}" alt="@{!! $document-&gt;data-&gt;image-&gt;alt !!}"&gt;
+        &lt;img src="@{{ $document-&gt;data-&gt;image-&gt;url }}" alt="@{{ $document-&gt;data-&gt;image-&gt;alt }}"&gt;
     &lt;/div&gt;
 
 @@stop
 </code></pre>
         </div>
-        <p>In your browser go to <a href="{!! Request::root() !!}/page/hello-world">{!! Request::root() !!}/page/hello-world</a> and you're done! You've officially created a page that pulls content from prismic.io.</p>
+        <p>In your browser go to <a href="{{ Request::root() }}/page/hello-world">{{ Request::root() }}/page/hello-world</a> and you're done! You've officially created a page that pulls content from prismic.io.</p>
 
         <h3 id="done"><span>5</span>Well done!</h3>
         <p>Sit back and enjoy the result.</p>

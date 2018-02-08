@@ -6,8 +6,6 @@ use Closure;
 use App\LinkResolver;
 use Prismic\Api;
 
-include(app_path() . '/LinkResolver.php');
-
 class ConnectToPrismic
 {
     /**
