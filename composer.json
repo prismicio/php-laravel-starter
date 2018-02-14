@@ -9,7 +9,7 @@
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "prismic/php-sdk": "^3.4"
+        "prismic/php-sdk": "4.0.0-beta"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
