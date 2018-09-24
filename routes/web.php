@@ -27,7 +27,7 @@ Route::get('/preview', function (Request $request) {
     if (!isset($token)) {
         return abort(400, 'Bad Request');
     }
-    $url = $request->input('api')->previewSession($token, $request->input('linkResolver'), '/');
+    $url = $request->attributes->get('api')->previewSession($token, $request->attributes->get('linkResolver'), '/');
 
     setcookie(Prismic\PREVIEW_COOKIE, $token, time() + 1800, '/', null, false, false);
     return response(null, 302)->header('Location', $url);

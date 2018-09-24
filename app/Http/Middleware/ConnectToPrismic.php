@@ -18,14 +18,14 @@ class ConnectToPrismic
     public function handle($request, Closure $next)
     {
         // Define the prismic.io repository API endpoint
-        $request['endpoint'] = config('prismic.url');
+        $request->attributes->set('endpoint', config('prismic.url'));
 
         // Define the link resolver
-        $request['linkResolver'] = new LinkResolver();
+        $request->attributes->set('linkResolver', new LinkResolver());
 
         // Connect to the prismic.io repository
         if (config('prismic.url') !== 'https://your-repo-name.prismic.io/api/v2') {
-            $request['api'] = Api::get(config('prismic.url'), config('prismic.token'));
+            $request->attributes->set('api', Api::get(config('prismic.url'), config('prismic.token')));
         }
 
         // Return the request

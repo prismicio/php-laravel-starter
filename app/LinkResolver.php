@@ -20,7 +20,7 @@ class LinkResolver extends PrismicLinkResolver
      * @param  object  $link
      * @return string
      */
-    public function resolve($link)
+    public function resolve($link): ?String
     {
         // Example link resolver for custom type with API ID of 'page'
         if ($link->type === 'page') {

@@ -16,10 +16,10 @@ class PrismicComposer
     public function __construct(Request $request)
     {
         // Define the prismic.io repository API endpoint
-        $this->endpoint = $request->input('endpoint');
+        $this->endpoint = $request->attributes->get('endpoint');
 
         // Define the link resolver
-        $this->linkResolver = $request->input('linkResolver');
+        $this->linkResolver = $request->attributes->get('linkResolver');
     }
 
     /**

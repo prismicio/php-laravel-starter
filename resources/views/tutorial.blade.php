@@ -118,7 +118,7 @@
 // Get page by UID
 Route::get('/page/{uid}', function ($uid, Request $request) {
     // Query the API
-    $document = $request->input('api')->getByUID('page', $uid);
+    $document = $request->attributes->get('api')->getByUID('page', $uid);
 
     // Render the page
     return view('page', ['document' => $document]);
