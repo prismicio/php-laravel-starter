@@ -28,8 +28,6 @@ Route::get('/preview', function (Request $request) {
         return abort(400, 'Bad Request');
     }
     $url = $request->attributes->get('api')->previewSession($token, $request->attributes->get('linkResolver'), '/');
-
-    setcookie(Prismic\PREVIEW_COOKIE, $token, time() + 1800, '/', null, false, false);
     return response(null, 302)->header('Location', $url);
 });
 
@@ -51,4 +49,14 @@ Route::get('/', function () {
 
 Route::get('/tutorial', function () {
     return view('tutorial');
+});
+
+/*
+|--------------------------------------------------------------------------
+| 404 Page Not Found
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/{path}', function () {
+    return view('404');
 });

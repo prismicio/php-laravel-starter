@@ -120,6 +120,11 @@ Route::get('/page/{uid}', function ($uid, Request $request) {
     // Query the API
     $document = $request->attributes->get('api')->getByUID('page', $uid);
 
+    // Display the 404 page if no document is found
+    if (!$document) {
+        return view('404');
+    }
+
     // Render the page
     return view('page', ['document' => $document]);
 });
@@ -138,7 +143,7 @@ Route::get('/page/{uid}', function ($uid, Request $request) {
 
 @@section('content')
 
-    &lt;div&gt;
+    &lt;div data-wio-id="@{{ $document-&gt;id }}"&gt;
         &lt;h1&gt;@{{ RichText::asText($document-&gt;data-&gt;title) }}&lt;/h1&gt;
         &lt;div&gt;
             @{!! RichText::asHtml($document-&gt;data-&gt;description) !!}
