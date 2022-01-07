@@ -6,11 +6,11 @@ This is a blank [Laravel](https://laravel.com) project that will connect to any 
 
 ### Launch the starter project
 
-*(Assuming you've [installed Laravel](https://laravel.com/docs/5.5/installation))*
+_(Assuming you've [installed Laravel](https://laravel.com/docs/5.5/installation))_
 
 Fork this repository, then clone your fork, and run this in your newly created directory:
 
-``` bash
+```bash
 composer install
 ```
 
@@ -28,7 +28,7 @@ Then start your server:
 php artisan serve
 ```
 
-Your Laravel starter project is now up and running! 
+Your Laravel starter project is now up and running!
 
 ### Configure the starter project
 
@@ -44,9 +44,9 @@ You may have to restart your server.
 
 When the project is first launched and viewed, it will by default display a help page. Here you will find some documentation to help you get started with your Laravel project.
 
-It includes an example that shows how to create a route and query a document of the custom type "page". It then shows how to integrate the content into the Laravel templates. 
+It includes an example that shows how to create a route and query a document of the custom type "page". It then shows how to integrate the content into the Laravel templates.
 
-Check it out to get a better understanding of how you would create your own routes and templates for your project. You can also explore our documentation to learn more about how to [query the API](https://prismic.io/docs/php/query-the-api/how-to-query-the-api) and how to integrate content fields like [Rich Text](https://prismic.io/docs/php/templating/rich-text), [Images](https://prismic.io/docs/php/templating/image), and more.
+Check it out to get a better understanding of how you would create your own routes and templates for your project. You can also explore our documentation to learn more about how to [query the API](./docs/02-query-the-api/01-how-to-query-the-api.md) and how to integrate content fields like [Rich Text](./docs/03-templating/14-rich-text-and-title.md), [Images](./docs/03-templating/09-images.md), and more.
 
 ## Deploying your Laravel application
 
@@ -94,7 +94,7 @@ You can read more about launching your project with Heroku here in their [Larave
 
 ## Learn more about prismic.io
 
-If you are looking for more resources to learn more about prismic.io, you can find out [how to get started with prismic.io](https://prismic.io/quickstart#?lang=php) and learn more by exploring [our full documentation](https://prismic.io/docs/php/getting-started/with-the-php-starter-kit).
+If you are looking for more resources to learn more about prismic.io, you can find out [how to get started with prismic.io](https://prismic.io/docs) and learn more by exploring [our full documentation](./docs).
 
 ### Understand the PHP development kit
 
